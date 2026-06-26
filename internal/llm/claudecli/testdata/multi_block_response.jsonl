@@ -1,0 +1,4 @@
+{"type":"system","subtype":"init"}
+{"type":"assistant","message":{"content":[{"type":"text","text":"first "}]}}
+{"type":"assistant","message":{"content":[{"type":"text","text":"second"}]}}
+{"type":"result","subtype":"success"}

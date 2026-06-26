@@ -1,0 +1,3 @@
+{"type": "system", "subtype": "init", "session_id": "loop-test"}
+{"type": "assistant", "message": {"role": "assistant", "content": [{"type": "tool_use", "id": "vt-1", "name": "hive_submit_review_verdict", "input": {"verdict": "CHANGES_REQUESTED", "confidence": 90, "file_refs": [{"path": "stuck.go", "line": 1, "comment": "fix the same thing", "reasoning": "needs work"}]}}]}}
+{"type": "result", "stop_reason": "tool_use", "usage": {"input_tokens": 100, "output_tokens": 20}}

@@ -1,0 +1,19 @@
+-- Foundational tuning-data capture (see docs/superpowers/operational-data.md):
+-- per-run snapshot of the effective config that was in effect when this
+-- run was dispatched. JSON-serialized *config.Config; ~1-2KB per run.
+--
+-- Without this column, any later tuning analysis is ambiguous when a
+-- lever flips (model swap, threshold change, prompt edit) — we couldn't
+-- separate "before" from "after" runs in aggregate queries. With it,
+-- queries like:
+--
+--   SELECT json_extract(config_snapshot, '$.Predictor.HaikuModel') AS model,
+--          AVG(a.precision_) FROM runs r
+--   JOIN predictor_accuracy a ON a.run_id = r.id
+--   WHERE a.skipped_reason IS NULL GROUP BY model;
+--
+-- become trivially expressible.
+--
+-- Best-effort persist from dispatch (log on error, never fail dispatch)
+-- — same fail-safe posture as predictor_metrics and predictor_accuracy.
+ALTER TABLE runs ADD COLUMN config_snapshot TEXT;

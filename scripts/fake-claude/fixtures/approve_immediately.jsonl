@@ -1,0 +1,5 @@
+{"type": "system", "subtype": "init", "session_id": "fake-session-1"}
+{"type": "text", "delta": "Reviewing the changes...", "delay_ms": 100}
+{"type": "tool_use", "id": "tu_001", "name": "hive_submit_review_verdict", "input": {"verdict": "APPROVE", "confidence": 92, "issues": []}, "delay_ms": 50}
+{"type": "tool_result", "tool_use_id": "tu_001", "output": "verdict submitted", "is_error": false}
+{"type": "result", "subtype": "stop", "stop_reason": "tool_use", "usage": {"input_tokens": 4321, "output_tokens": 789, "cache_read_input_tokens": 120}}

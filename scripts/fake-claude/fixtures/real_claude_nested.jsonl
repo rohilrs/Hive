@@ -1,0 +1,6 @@
+{"type":"system","subtype":"init","session_id":"sess-abc","model":"claude-sonnet-4-6"}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"thinking","thinking":"Let me read the file."},{"type":"tool_use","id":"toolu_abc1","name":"Read","input":{"file_path":"a.go"}}]}}
+{"type":"user","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"toolu_abc1","is_error":false,"content":"file contents"}]}}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"tool_use","id":"toolu_abc2","name":"hive_submit_review_verdict","input":{"verdict":"APPROVE","confidence":95,"file_refs":[]}}]}}
+{"type":"user","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"toolu_abc2","is_error":false,"content":"verdict submitted"}]}}
+{"type":"result","stop_reason":"end_turn","usage":{"input_tokens":100,"output_tokens":50,"cache_read_input_tokens":20}}

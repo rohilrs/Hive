@@ -1,0 +1,3 @@
+{"type": "system", "subtype": "init", "session_id": "loop-sim-low"}
+{"type": "assistant", "message": {"role": "assistant", "content": [{"type": "text", "text": "{\"similarity\": 0.10, \"reason\": \"iters touch different files; reviewer comments are about different concerns\"}"}]}}
+{"type": "result", "stop_reason": "end_turn", "usage": {"input_tokens": 200, "output_tokens": 30}}

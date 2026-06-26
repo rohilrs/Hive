@@ -1,0 +1,5 @@
+{"type":"system","subtype":"init","session_id":"nested-chat-sess-1","model":"claude-sonnet-4-6"}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"Let me check the status."},{"type":"tool_use","id":"toolu_n1","name":"hive_list_tasks","input":{"status":"pending"}}]}}
+{"type":"user","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"toolu_n1","is_error":false,"content":"{\"pending_tasks\":2}"}]}}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":" You have 2 pending tasks."}]}}
+{"type":"result","subtype":"stop","stop_reason":"end_turn","usage":{"input_tokens":100,"output_tokens":50,"cache_read_input_tokens":20}}

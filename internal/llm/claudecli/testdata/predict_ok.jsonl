@@ -1,0 +1,3 @@
+{"type":"system","subtype":"init"}
+{"type":"assistant","message":{"content":[{"type":"text","text":"{\"candidates\":[{\"file\":\"a.go\",\"symbol\":\"Run\",\"score\":0.9,\"reason\":\"primary\"},{\"file\":\"b.go\",\"score\":0.7,\"reason\":\"helper\"}]}"}]}}
+{"type":"result","subtype":"success"}

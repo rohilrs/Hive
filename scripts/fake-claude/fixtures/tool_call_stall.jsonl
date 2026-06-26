@@ -1,0 +1,4 @@
+{"type": "system", "subtype": "init", "session_id": "fake-session-4"}
+{"type": "text", "delta": "Running the tests...", "delay_ms": 100}
+{"type": "tool_use", "name": "Bash", "input": {"command": "sleep 9999"}, "id": "stuck-tool-1"}
+{"type": "text", "delta": "Waiting for output...", "delay_ms": 600000}

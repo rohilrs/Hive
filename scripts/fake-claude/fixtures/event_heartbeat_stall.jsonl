@@ -1,0 +1,5 @@
+{"type": "system", "subtype": "init", "session_id": "fake-session-5"}
+{"type": "text", "delta": "Starting work...", "delay_ms": 100}
+{"type": "text", "delta": "Thinking about the problem...", "delay_ms": 120000}
+{"type": "text", "delta": "Finally responding.", "delay_ms": 100}
+{"type": "result", "stop_reason": "end_turn", "usage": {"input_tokens": 10, "output_tokens": 5}}

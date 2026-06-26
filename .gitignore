@@ -1,0 +1,34 @@
+# Binaries
+/hive
+/fake-claude
+/fake-scavenger
+/scripts/fake-claude/fake-claude
+*.exe
+
+# Test artifacts
+*.test
+*.out
+coverage.txt
+.fake-claude-argv.json
+
+# Hive runtime data
+.hive/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Local AI/MCP/scavenger setup — per-dev, never committed
+.claude/
+.cursor/
+.mcp.json
+.scavenger/
+.scavenger
+
+# Local smoke-test helpers (machine-specific paths, kept out of repo)
+scripts/smoke-bootstrap/
+
+# OS
+.DS_Store
+Thumbs.db

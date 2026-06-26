@@ -1,0 +1,1 @@
+ALTER TABLE tasks ADD COLUMN pipeline TEXT NOT NULL DEFAULT 'build';

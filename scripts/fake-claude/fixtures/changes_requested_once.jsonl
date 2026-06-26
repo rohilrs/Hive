@@ -1,0 +1,7 @@
+{"type": "system", "subtype": "init", "session_id": "fake-session-2"}
+{"type": "text", "delta": "Reading the diff...", "delay_ms": 100}
+{"type": "tool_use", "name": "Read", "input": {"file_path": "/worktree/src/auth/login.ts"}, "delay_ms": 50}
+{"type": "tool_result", "name": "Read", "output": "export function handleLogin() {...}"}
+{"type": "text", "delta": "Found two issues that need fixes.", "delay_ms": 100}
+{"type": "tool_use", "name": "hive_submit_review_verdict", "input": {"verdict": "CHANGES_REQUESTED", "confidence": 80, "issues": ["No null check on req.body.email", "Session timeout not respected"]}, "delay_ms": 50}
+{"type": "result", "subtype": "stop", "stop_reason": "tool_use"}
